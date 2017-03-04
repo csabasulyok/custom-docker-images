@@ -1,5 +1,8 @@
 sudo: required
 
+services:
+  - docker
+  
 script:
   - docker login -e="csaba.sulyok@gmail.com" -u="csabasulyok" -p="$DOCKER_PASSWORD"
   - docker build -t csabasulyok/npm-docker:7-alpine .
