@@ -4,6 +4,7 @@ services:
   - docker
 
 script:
+  - cd npm-docker
   - docker login -u="csabasulyok" -p="$DOCKER_PASSWORD"
   - docker build -t csabasulyok/npm-docker:7-alpine .
   - docker push csabasulyok/npm-docker:7-alpine
