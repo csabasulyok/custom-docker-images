@@ -7,5 +7,5 @@ RUN echo "http://dl-4.alpinelinux.org/alpine/edge/community" >> /etc/apk/reposit
 RUN apk update && apk add --no-cache lapack-dev gcc g++ gfortran freetype-dev linux-headers
 
 # install numpy and matplotlib with pip
-RUN pip install numpy==1.9.2 psutil==4.3.1
+RUN pip install numpy==1.9.2 psutil==5.1.3
 
