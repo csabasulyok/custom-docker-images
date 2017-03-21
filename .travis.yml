@@ -4,7 +4,13 @@ services:
   - docker
 
 script:
-  - cd npm-docker
   - docker login -u="csabasulyok" -p="$DOCKER_PASSWORD"
+
+  - cd npm-docker
   - docker build -t csabasulyok/npm-docker:7-alpine .
   - docker push csabasulyok/npm-docker:7-alpine
+
+  - cd ../numpy
+  - docker build -t csabasulyok/numpy:1.9.2-py2.7-alpine .
+  - docker push csabasulyok/numpy:1.9.2-py2.7-alpine
+
