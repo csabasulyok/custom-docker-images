@@ -15,6 +15,6 @@ script:
   - docker push csabasulyok/numpy:1.9.2-py2.7-alpine
 
   - cd ../emc
-  - docker build -t csabasulyok/emc-tools:2.7.12
+  - docker build -t csabasulyok/emc-tools:2.7.12 .
   - docker push csabasulyok/emc-tools:2.7.12
 
