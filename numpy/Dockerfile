@@ -1,5 +1,5 @@
 # start out with a node image using alpine
-FROM python:2.7-12-alpine
+FROM python:2.7.12-alpine
 
 # install dependencies
 # the lapack package is only in the community repository
